@@ -4,6 +4,7 @@ namespace Guerriat\FilamentSpatieLaravelDatabaseMailTemplates;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Guerriat\FilamentSpatieLaravelDatabaseMailTemplates\Resources\MailTemplateResource;
 
 class FilamentSpatieLaravelDatabaseMailTemplatesPlugin implements Plugin
 {
@@ -14,7 +15,7 @@ class FilamentSpatieLaravelDatabaseMailTemplatesPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel->resources([MailTemplateResource::class]);
     }
 
     public function boot(Panel $panel): void
