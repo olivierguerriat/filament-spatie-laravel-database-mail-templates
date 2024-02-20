@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Guerriat\FilamentSpatieLaravelDatabaseMailTemplates;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentSpatieLaravelDatabaseMailTemplatesPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-spatie-laravel-database-mail-templates';
     }
 
     public function register(Panel $panel): void
