@@ -14,11 +14,11 @@ use Filament\SpatieLaravelTranslatablePluginServiceProvider;
 use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
+use Guerriat\FilamentSpatieLaravelDatabaseMailTemplates\FilamentSpatieLaravelDatabaseMailTemplatesServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use Guerriat\FilamentSpatieLaravelDatabaseMailTemplates\FilamentSpatieLaravelDatabaseMailTemplatesServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -18,5 +18,4 @@ class FilamentSpatieLaravelDatabaseMailTemplatesServiceProvider extends PackageS
             ->hasTranslations()
             ->hasViews(static::$name);
     }
-
 }

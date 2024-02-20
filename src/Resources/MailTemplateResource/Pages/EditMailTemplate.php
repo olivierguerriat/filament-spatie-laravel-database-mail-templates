@@ -35,11 +35,13 @@ class EditMailTemplate extends EditRecord
                         ->deletable(false)
                         ->default(function (MailTemplate $record) {
                             $keys = $record->getVariables();
+
                             return array_combine($keys, $keys);
                         }),
                 ])
                 ->action(function (MailTemplate $record, array $data) {
-                    $mail = new class($record, $data['variables']) extends TemplateMailable {
+                    $mail = new class($record, $data['variables']) extends TemplateMailable
+                    {
                         public function __construct(MailTemplateInterface $mt, $v)
                         {
                             $this->mailTemplate = $mt;
